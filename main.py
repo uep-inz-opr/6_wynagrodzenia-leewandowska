@@ -16,7 +16,7 @@ class Pracownik:
       zal_a=round(round(podst_b*0.18,2)-46.33,2)
       zal_b=round(zal_a-ubez_zdr_b,0)
       wyplata=round(self._wynagrodzenie-sk-ubez_zdr_a-zal_b,2)
-      skladki=round(self._wynagrodzenie*0.0976+self._wynagrodzenie*0.065+self._wynagrodzenie*0.0193+self._wynagrodzenie*0.0245+self._wynagrodzenie*0.001,2)
+      skladki=round(self._wynagrodzenie*0.0976,2)+round(self._wynagrodzenie*0.065,2)+round(self._wynagrodzenie*0.0193,2)+round(self._wynagrodzenie*0.0245,2)+round(self._wynagrodzenie*0.001,2)
       koszt_pracodawcy=round(self._wynagrodzenie+skladki,2)
       Pracownik.laczny_koszt+=koszt_pracodawcy
       print(self._imie,"{:.2f}".format(wyplata),"{:.2f}".format(skladki),"{:.2f}".format(koszt_pracodawcy))
