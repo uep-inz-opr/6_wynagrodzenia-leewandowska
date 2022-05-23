@@ -19,7 +19,7 @@ class Pracownik:
       skladki=round(self._wynagrodzenie*0.0976+self._wynagrodzenie*0.065+self._wynagrodzenie*0.0193+self._wynagrodzenie*0.0245+self._wynagrodzenie*0.001,2)
       koszt_pracodawcy=round(self._wynagrodzenie+skladki,2)
       Pracownik.laczny_koszt+=koszt_pracodawcy
-      print(self._imie,wyplata,skladki,koszt_pracodawcy)
+      print(self._imie,"{:.2f}".format(wyplata),"{:.2f}".format(skladki),"{:.2f}".format(koszt_pracodawcy))
 
 liczba_pracownikow=int(input())
 pracownicy_lista=[]
