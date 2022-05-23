@@ -22,11 +22,16 @@ class Pracownik:
       print(self._imie,wyplata,skladki,koszt_pracodawcy)
 
 liczba_pracownikow=int(input())
+pracownicy_lista=[]
 for pracownicy in range(liczba_pracownikow):
-  imie_wynagrodzenie=input().split()
-  imie_pr=imie_wynagrodzenie[0]
-  wynagrodzenie_pr=float(imie_wynagrodzenie[1])
-  pr=Pracownik(imie_pr,wynagrodzenie_pr)
-  pr.wyniki()
+  imie_wynagrodzenie=input()
+  pracownicy_lista.append(imie_wynagrodzenie)
+
+for pracownik2 in pracownicy_lista:   
+  pr=pracownik2.split(' ')
+  imie_pr=pr[0]
+  wynagrodzenie_pr=float(pr[1])
+  pr2=Pracownik(imie_pr,wynagrodzenie_pr)
+  pr2.wyniki()
 
 print(Pracownik.laczny_koszt)
