@@ -27,6 +27,6 @@ for pracownicy in range(liczba_pracownikow):
   imie_pr=imie_wynagrodzenie[0]
   wynagrodzenie_pr=float(imie_wynagrodzenie[1])
   pr=Pracownik(imie_pr,wynagrodzenie_pr)
-  print(pr.wyniki())
+  pr.wyniki()
 
 print(Pracownik.laczny_koszt)
